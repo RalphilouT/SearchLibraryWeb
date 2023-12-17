@@ -1,0 +1,63 @@
+label{
+    color: black;
+    margin-bottom: 0.5rem;
+}
+body {
+    background-image: url("https://images.unsplash.com/photo-1544640808-32ca72ac7f37?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-color: #ffffff;
+   }
+form{
+    display:flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin: auto;
+    max-width: 660px;
+
+}
+form input, form textarea{
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color: gray;
+    border-color: gray;
+    color: white;
+}
+
+.button1 {
+    padding: 12px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #3a3a3a;
+    color: white;
+    border-radius: 8px;
+    
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #9e9e9e;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th,
+  td {
+    padding: 20px;
+  }
