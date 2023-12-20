@@ -37,11 +37,11 @@ function Form(){
     if(books.data.length === 0){
         
         return(
-            <div className="form">
-                        <form onSubmit={handleSubmit}>
+            <div className="formdiv">
+                        <form onSubmit={handleSubmit} className="formelement">
                             <label>Enter Title
                             </label>
-                            <input type="text" value={searchBook} onChange={(e)=> setBookname(e.target.value)} required>
+                            <input className="inputform" type="text" value={searchBook} onChange={(e)=> setBookname(e.target.value)} required>
                             </input>
                             <button className="button1" onClick={fetchInfo}>Submit</button>
                             
@@ -77,7 +77,7 @@ function Form(){
                                     Our collection
                                 </caption>
                                 <thead className="table header">
-                                    <tr>
+                                    <tr className="rows">
                                         <th scope="col">
                                             Title
                                         </th>
@@ -94,7 +94,7 @@ function Form(){
                                     </tr>
                                     {
                                         books.data.map((book)=>(
-                                            <tr>
+                                            <tr className="rows">
                                                 <th scope="col">
                                                     {books.loading?'':
                                                         book.title}
